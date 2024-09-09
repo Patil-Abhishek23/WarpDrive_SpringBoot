@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{/applicant.css}">
+</head>
+<body>
+	<form action="/applicant" method="post">
+		<h2>Application</h2>
+		<label>Full Name</label> 
+        <input type="text" name="fullname" required>
+		<p></p>
+		<label>Email:</label> <input type="email" name="applicantemail" required>
+		<p></p>
+		<label for="education">Education Level</label> <select name="education"
+			id="education" required>
+			<option value="">Select your education level</option>
+			<option value="B.E">B.E</option>
+			<option value="MCA">MCA</option>
+			<option value="B.sc(IT)">B.sc(IT)</option>
+			<option value="others">others</option>
+		</select>
+		<p></p>
+
+		<label>Skills</label> <input type="text" name="skills" required>
+		<p>
+
+			<label for="expreince">Expreince</label>
+			 <select name="expreince" id="expreince" required>
+				<option value="">select expreince</option>
+				<option value="Fresher">Frehser</option>
+				<option value="one">1 year</option>
+				<option value="two">2 years</option>
+				<option value="three">4 years</option>
+				<option value="five">5 years</option>
+				<option value=" >6 ">6 years</option>
+			</select>
+		<p></p>
+
+		<label for="resume">Resume(link) :</label> 
+		<input type="text" id="resume" name="resume" required>
+
+		<p></p>
+
+		<label for="why_you">why you</label>
+		 <input type="text" name="why_you" required>
+
+		<p></p>
+		<button type="submit">Apply</button>
+		<button type="reset">Reset</button>
+		<p>
+	</form>
+</body>
+</html>
